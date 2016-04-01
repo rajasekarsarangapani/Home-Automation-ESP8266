@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+  <html >
+  <head>
+  <meta charset='UTF-8'>
+  <title>Home Automation Server</title>
+  <style>
+  * {box-sizing: border-box;}
+  *:focus{outline: none;}
+  body{
+  font-family: Arial;
+  background-color: CRIMSON;
+
+  padding: 50px;}
+  .login {margin: 20px auto;width: 400px;}
+  
+  .login-screen{
+  background-color: CRIMSON;
+  padding: 20px;border-radius: 5px}
+  .app-title {text-align: center;color: white;}
+  .login-form{text-align: center;}
+  .control-group {margin-bottom: 10px;}
+  input {text-align: center;background-color: #ECF0F1;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 200;
+  padding: 10px 0;width: 250px;
+  transition: border .5s;}
+  
+  input:focus {
+  border: 2px solid #3e8e41;box-shadow: none;}
+  
+  .btn {  
+   background-color: #4CAF50; /* Green #4CAF50; */
+    border: none;
+    color: white;
+    padding: 15px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	border: 1px solid #ccc;
+  border-radius: 2px;
+}
+  
+  .btn:hover {
+    background-color: #3e8e41;
+	}
+  
+  </style></head>
+  <body><form action='/login' method='POST'><div class='login'><div class='login-screen'><div class='app-title'><h1>Web Control Login</h1></div><div class='login-form'>
+  <div class='control-group'><input type='text' name='USERNAME' placeholder='user name'>
+  <label class='login-field-icon fui-user' for='login-name'></label></div><div class='control-group'>
+  <input type='password' name='PASSWORD' placeholder='password'><label class='login-field-icon fui-lock' for='login-pass'></label></div>
+  <button class='btn'>Submit</button></div></form><a class='msg'>" + msg + "<br></div></div></body></html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>Home Automation server</title>
+<META HTTP-EQUIV='REFRESH' CONTENT='100;URL=login?DISCONNECT=YES'>
+<style>
+body { 
+
+background: CRIMSON;
+width: 550px;
+  margin: 0 auto; 
+  
+  }
+
+h1{
+margin:0px auto 35px auto;
+text-align:center;
+font-size: 50px;
+font-weight:bold;
+color:white;
+}
+p
+{
+margin:25px auto 10 auto;
+text-align:center;
+font-size: 20px;
+font-weight:200;
+color:white;
+}
+p1
+{
+margin:25px auto 10 auto;
+text-align:center;
+font-size: 18px;
+font-weight:200;
+color:white;
+}
+
+footer
+{
+margin:0px auto 0 auto;
+text-align:center;
+font-size: 18px;
+font-weight:200;
+color:white;
+}
+.switch input {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  opacity: 0;
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.button {
+    background-color: #4CAF50; /* Green #4CAF50; */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button:hover {
+    background-color: #3e8e41;
+	}
+
+ ledon {
+   display: inline-block;
+   height: 23px;
+    width: 23px;
+    background-color: #0f0;
+//   background-color: rgba(60, 132, 198, 0.8);
+    -moz-border-radius: 11px;
+    -webkit-border-radius: 11px;
+    -khtml-border-radius: 11px;
+    border-radius: 11px;
+    margin-left: 10px;
+
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 90%, from(rgba(46, 184, 0, 0.8)), to(rgba(148, 255, 112, .9)));@
+    border: 2px solid #ccc;
+    -webkit-box-shadow: rgba(11, 140, 27, 0.5) 0px 10px 16px;
+    -moz-box-shadow: rgba(11, 140, 27, 0.5) 0px 10px 16px; /* FF 3.5+ */
+    box-shadow: rgba(11, 140, 27, 0.5) 0px 10px 16px; /* FF 3.5+ */
+	
+	
+}
+ledoff {
+  content: '';
+  display: inline-block;
+   height: 23px;
+    width: 23px;
+    background-color: #040;
+    -moz-border-radius: 11px;
+    -webkit-border-radius: 11px;
+    -khtml-border-radius: 11px;
+    border-radius: 11px;
+    margin-left: 10px;
+    -webkit-box-shadow: rgba(11, 140, 27, 0.5) 0px 10px 16px;
+    -moz-box-shadow: rgba(11, 140, 27, 0.5) 0px 10px 16px; /* FF 3.5+ */
+    box-shadow: rgba(11, 140, 27, 0.5) 0px 10px 16px; /* FF 3.5+ */
+    }
+	
+meter {
+  width: 180px;
+  height: 25px;
+  -webkit-appearance: none; /* Reset appearance */
+  border: 1px solid #ccc;
+  border-radius: 3px;
+    }
+
+</style>
+</head>
+<body link='yellow'>
+
+<h1>Home Automation Server</h1>
+<p>Click the button to ON / OFF the devices</p>
+
+<a href=\'?Device1=1\'><button class='button'>Device 1</button></a>
+<ledon></ledon>&nbsp&nbsp
+<a href=\'?Device2=2\'><button class='button'>Device 2</button></a>
+<ledon></ledon>&nbsp&nbsp
+<a href=\'?Device3=3\'><button class='button'>Device 3</button></a>
+<ledon></ledon><br><br>
+<a href=\'?Device4=4\'><button class='button'>Device 4</button></a>
+<ledon></ledon>&nbsp&nbsp
+<a href=\'?Device5=5\'><button class='button'>Device 5</button></a>
+<ledoff></ledoff>&nbsp&nbsp
+<a href=\'?Device6=6\'><button class='button'>Device 6</button></a>
+<ledon></ledon><br><br>
+<a href=\'?Device7=7\'><button class='button'>Device 7</button></a>
+<ledon></ledon>&nbsp&nbsp
+<a href=\'?Device8=8\'><button class='button'>Device 8</button></a>
+<ledon></ledon>&nbsp&nbsp
+<a href=\'?Device9=9\'><button class='button'>ALL OFF</button></a>
+<ledon></ledon><br><br>
+<p>Fan Speed Control</p>
+<a href=\'?DeviceU=U\'><button class='button'>Speed UP</button></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href=\'?DeviceN=N\'><button class='button'>Speed DN</button></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<meter value='2' min='0' max='5'>2 out of 10</meter>
+<br><br><br>
+
+<p>You can access this page until you <a href=\'/login?DISCONNECT=YES\'>sign out</p></a>
+<footer>Contact information :- E-mail: <a href='mailto:rajasekarsarangapani@gmail.com'>rajasekarsarangapani@gmail.com</a><br>&nbsp&nbsp&nbsp&nbspPH: +91 9789096114 </footer>
+
+</body>
+</html>
